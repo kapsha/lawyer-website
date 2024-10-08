@@ -30,6 +30,15 @@ header p {
 /* Navigation Styles */
 nav {
     background-color: #006400;
+    position: relative;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
 }
 
 nav ul {
@@ -39,11 +48,11 @@ nav ul {
     overflow: hidden;
 }
 
-nav li {
+nav ul li {
     float: left;
 }
 
-nav a {
+nav ul li a {
     display: block;
     padding: 15px 20px;
     color: white;
@@ -51,7 +60,7 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
+nav ul li a:hover {
     background-color: #004d00;
 }
 
@@ -89,3 +98,34 @@ main::after {
     display: table;
     clear: both;
 }
+
+/* Responsive Navigation */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: #006400;
+        text-align: center;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+        display: block;
+    }
+}
+
