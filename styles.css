@@ -31,6 +31,7 @@ header p {
 nav {
     background-color: #006400;
     position: relative;
+    padding: 10px 0;
 }
 
 nav .menu-icon {
@@ -39,6 +40,9 @@ nav .menu-icon {
     color: white;
     cursor: pointer;
     padding: 15px;
+    position: absolute;
+    right: 20px; /* Aligns the menu to the right */
+    top: 15px;   /* Adjusts the vertical position */
 }
 
 nav ul {
@@ -128,4 +132,3 @@ main::after {
         display: block;
     }
 }
-
