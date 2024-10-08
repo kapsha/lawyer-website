@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #2E8B57;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #006400;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #004d00;
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 0;
+}
+
+.introduction {
+    margin-bottom: 40px;
+}
+
+.introduction h2 {
+    color: #2E8B57;
+}
+
+.introduction p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f0f0f0;
+    color: #666;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Clearfix */
+nav::after,
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
