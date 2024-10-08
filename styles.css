@@ -32,6 +32,9 @@ nav {
     background-color: #006400;
     position: relative;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Ensures proper alignment of elements */
+    align-items: center; /* Centers the content vertically */
 }
 
 nav .menu-icon {
@@ -39,21 +42,20 @@ nav .menu-icon {
     font-size: 28px;
     color: white;
     cursor: pointer;
-    padding: 15px;
-    position: absolute;
-    right: 20px; /* Aligns the menu to the right */
-    top: 15px;   /* Adjusts the vertical position */
+    padding-right: 20px;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
 }
 
 nav ul li {
-    float: left;
+    padding-left: 15px;
 }
 
 nav ul li a {
@@ -95,14 +97,6 @@ footer {
     font-size: 0.9em;
 }
 
-/* Clearfix */
-nav::after,
-main::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 /* Responsive Navigation */
 @media screen and (max-width: 768px) {
     nav ul {
@@ -115,20 +109,28 @@ main::after {
         text-align: center;
     }
 
-    nav ul li {
-        float: none;
-    }
-
     nav .menu-icon {
-        display: block;
+        display: block; /* Show hamburger icon in mobile view */
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
     }
 
     nav ul.show {
         display: block;
     }
 
+    nav ul li {
+        float: none;
+        padding: 10px 0;
+    }
+
     nav ul li a {
-        padding: 15px 0;
         display: block;
+        padding: 15px;
     }
 }
