@@ -5,29 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advocate Rajesh Menon - Legal Services in Kerala</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js"></script>
 </head>
 <body>
+    <!-- Placeholder for the navigation bar -->
+    <div id="navbar-placeholder"></div>
+
     <header>
         <div class="container">
             <h1>Advocate Rajesh Menon</h1>
             <p>Committed to Delivering Justice in Kerala, India</p>
         </div>
     </header>
-
-    <nav>
-        <div class="container">
-            <div class="menu-icon" id="menu-icon">
-                &#9776;
-            </div>
-            <ul id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Practice Areas</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="login.html" id="client-login">Client Login</a></li> <!-- Client Login button -->
-            </ul>
-        </div>
-    </nav>
 
     <main>
         <div class="container">
@@ -43,11 +33,9 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Advocate Rajesh Menon. All rights reserved.</p>
-            <p>123 Justice Avenue, Kochi, Kerala, India</p>
-            <p>Phone: +91 98765 43210 | Email: rajeshmenon@example.com</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="loadNavbar.js"></script> <!-- This will load the reusable navbar -->
 </body>
 </html>

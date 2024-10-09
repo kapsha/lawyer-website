@@ -26,6 +26,10 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
             const user = userCredential.user;
             document.getElementById('loginMessage').innerHTML = "Login successful!";
             // Redirect or perform actions upon successful login
+            console.log('User logged in:', user);
+
+            // Redirect to a protected area or client dashboard
+            window.location.href = "dashboard.html";  // Example redirect after successful login
         })
         .catch((error) => {
             const errorMessage = error.message;
