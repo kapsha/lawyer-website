@@ -14,78 +14,76 @@ body {
 header {
     background-color: #2E8B57;
     color: white;
-    padding: 60px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 header p {
     font-size: 1.2em;
+    font-style: italic;
 }
 
-/* Navigation Styles */
-nav {
-    background-color: #006400;
-    position: relative;
-    padding: 10px 0;
+/* Main Content Styles for Login Page */
+.login-container {
     display: flex;
-    justify-content: space-between; /* Ensures proper alignment of elements */
-    align-items: center; /* Centers the content vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full-page height */
+    background-color: #f9f9f9;
 }
 
-nav .menu-icon {
-    display: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-    padding-right: 20px;
+.login-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-}
-
-nav ul li {
-    padding-left: 15px;
-}
-
-nav ul li a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    background-color: #004d00;
-}
-
-/* Main Content Styles */
-main {
-    padding: 40px 0;
-}
-
-.introduction {
-    margin-bottom: 40px;
-}
-
-.introduction h2 {
+.login-box h2 {
     color: #2E8B57;
+    margin-bottom: 20px;
 }
 
-.introduction p {
-    font-size: 1.1em;
-    line-height: 1.6;
+.login-box label {
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.login-box button {
+    background-color: #2E8B57;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.login-box button:hover {
+    background-color: #006400;
 }
 
 /* Footer Styles */
@@ -95,42 +93,4 @@ footer {
     padding: 20px 0;
     text-align: center;
     font-size: 0.9em;
-}
-
-/* Responsive Navigation */
-@media screen and (max-width: 768px) {
-    nav ul {
-        display: none;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        right: 0;
-        background-color: #006400;
-        text-align: center;
-    }
-
-    nav .menu-icon {
-        display: block; /* Show hamburger icon in mobile view */
-        font-size: 28px;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        position: absolute;
-        right: 20px;
-        top: 15px;
-    }
-
-    nav ul.show {
-        display: block;
-    }
-
-    nav ul li {
-        float: none;
-        padding: 10px 0;
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 15px;
-    }
 }
