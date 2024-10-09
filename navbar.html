@@ -1,12 +1,28 @@
-<nav class="sticky-nav">
+<nav class="navbar">
     <div class="container">
-        <a href="index.html" class="home-icon">🏠 Home</a>
-        <ul id="nav-links">
+        <div class="navbar-brand">
+            <a href="index.html" class="navbar-logo">Advocate Rajesh Menon</a>
+            <span id="menu-toggle" class="menu-icon">&#9776;</span> <!-- Hamburger menu for mobile -->
+        </div>
+        <ul id="nav-links" class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Practice Areas</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="login.html" id="client-login">Client Login</a></li> <!-- Client Login will be hidden if logged in -->
+            <li><a href="login.html" id="client-login">Client Login</a></li>
         </ul>
+        <span id="close-nav" class="close-nav">&times;</span> <!-- Close icon for mobile menu -->
     </div>
 </nav>
+
+<!-- Overlay menu for mobile -->
+<div id="mobile-menu-overlay" class="mobile-menu-overlay">
+    <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Practice Areas</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="login.html" id="mobile-client-login">Client Login</a></li>
+        <li><span id="close-overlay" class="close-overlay">&times;</span></li> <!-- Close button -->
+    </ul>
+</div>
